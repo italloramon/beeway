@@ -20,10 +20,10 @@ public class LoginController {
 
     private final UserService userService;
 
-    @GetMapping("/login")
-    public String loginForm() {
-        return "login";
-    }
+        @GetMapping("/login")
+        public String loginForm() {
+            return "login";
+        }
 
     @GetMapping("/registration")
     public String registrationForm(Model model) {

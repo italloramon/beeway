@@ -34,6 +34,9 @@ public class User {
     )
     private List<Role> roles = new ArrayList<>();
 
+    @Column(name = "reset_password_token", length = 30)
+    private String resetPasswordToken;
+
     public User(String name, String email, String password, List<Role> roles) {
         this.name = name;
         this.email = email;
