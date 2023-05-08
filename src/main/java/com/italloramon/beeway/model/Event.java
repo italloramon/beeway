@@ -22,6 +22,8 @@ public class Event {
 
     private Integer maximumVouchers;
 
+    private String imageUrl;
+
     @OneToMany
     private List<Voucher> currentVouchers;
 

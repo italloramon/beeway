@@ -17,6 +17,8 @@ public class EventDtoRequest {
 
     private Integer maximumVouchers;
 
+    private String imageUrl;
+
     private List<Voucher> currentVouchers;
 
     private User createdBy;

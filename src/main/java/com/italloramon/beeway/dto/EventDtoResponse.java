@@ -21,6 +21,8 @@ public class EventDtoResponse {
 
     private Integer maximumVouchers;
 
+    private String imageUrl;
+
     private List<Voucher> currentVouchers;
 
     private User createdBy;
