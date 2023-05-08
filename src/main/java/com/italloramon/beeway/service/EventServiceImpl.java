@@ -8,6 +8,8 @@ import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @RequiredArgsConstructor
 @Service
 public class EventServiceImpl implements EventService{
@@ -41,5 +43,10 @@ public class EventServiceImpl implements EventService{
     @Override
     public void deleteEventById(Long id) {
         eventRepository.deleteById(id);
+    }
+
+    @Override
+    public List<Event> findAll() {
+        return eventRepository.findAll();
     }
 }
