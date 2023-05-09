@@ -14,6 +14,12 @@
 </head>
 <body>
     <div th:insert="fragments/navbar :: navbar"></div>
+    <a class="btn btn-primary mt-3" th:href="@{/events/add}">Add Event</a>
+    <div th:if="${param.success}">
+        <div class="alert alert-info">
+            Event created with success !!!
+        </div>
+    </div>
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col" th:each="event : ${events}">
             <div class="card h-100">
